@@ -1,5 +1,4 @@
 import src_import, OMP_algorithm
-import numpy as np
 from matplotlib.pyplot import *
 import time
 
@@ -141,7 +140,7 @@ def get_accuracy_block(A_list, threshold, borda=False):
 if __name__ == "__main__":
     A_list = src_import.calc_train(True)
     # A = src_import.calc_train()
-    # print(testify_img_block(A_list, 1, "./AR/m-001-08.pgm", 1e0, True))
+    # print(testify_img_block(A_list, 1, "./AR/m-001-08.pgm", 1e-1))
     # print(get_accuracy_block(A_list)/1200)
     # print(get_accuracy_src(A, 1e-1))
     time_start = time.time()

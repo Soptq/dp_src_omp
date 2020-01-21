@@ -80,8 +80,8 @@ def OMP_solve(A, y, threshold):
         residue = y - np.matmul(A_new, lp)
         if np.sqrt(np.sum(residue ** 2)) < threshold:
             break
-        # else:
-            # print(np.sqrt(np.sum(residue ** 2)))
+        else:
+            print(np.sqrt(np.sum(residue ** 2)))
     return x_rec
 
 
